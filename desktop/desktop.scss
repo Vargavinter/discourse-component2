@@ -1,0 +1,115 @@
+// Container
+// *------------------------------------------------*
+#main-outlet {
+  margin-top: 42px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  background: #FAFFFD;
+  width: 75%;
+  max-width: 1030px;
+  padding: 3em 3em 5%;
+  padding-bottom: 5% !important;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.18);
+}
+
+// Navigation Bar
+// *------------------------------------------------*
+.nav-pills li a {  
+  &.active {
+    border-bottom: 2px solid #f2b6ae;
+    border-radius: 2px;
+    background: none;
+    color: #000000;
+  }
+  &:hover {
+    border-radius: 2px;
+    background-color: #f2b6ae;
+    color: #000000;
+  }
+}
+
+.list-controls .combo-box .combo-box-header {
+  background: transparent;
+  color: #000000;
+  border: 2px solid #ffdac1;
+  border-radius: 4px;
+}
+
+// Topic List
+// *------------------------------------------------*
+table {
+  tbody {
+    border-top: 3px solid #987F51;
+    tr {
+      border-bottom: 1px solid #E9E2BE;
+    }
+  }
+}
+
+// Topic Page
+// *------------------------------------------------*
+.topic-body, .topic-avatar {
+  border-top: 3px solid #987F51;
+}
+
+.timeline-container .topic-timeline { 
+  .timeline-scrollarea {
+    border-color: #ffdac1;
+  }
+  .timeline-handle {
+    background-color: #f2b6ae;
+  }
+}
+
+// Buttons
+// *------------------------------------------------*
+.btn {
+  border-radius: 4px;
+  background: #ffdac1;
+  color: #000000;
+  .discourse-no-touch & {
+    &:hover, 
+    &.btn-hover {
+      color: #000000;
+      background: #FFAC75;
+      .d-icon {
+        color: #000000;
+      }
+    }
+  }
+  &:hover, 
+  &.btn-hover {
+    color: #000000;
+    background: #FFAC75;
+    .d-icon {
+      color: #000000;
+    }
+  }
+  &:active, 
+  &.btn-active {
+    background-image: none;
+    background-color: #FFAC75;
+    color: #000000;
+    .d-icon {
+      color: #000000;
+    }
+  } 
+}
+
+.btn-danger {
+  background: $danger;
+  .discourse-no-touch & {
+    &:hover, 
+    &.btn-hover {
+     background: $danger-hover;    
+    }
+  }
+}
+
+.btn-primary {
+  background: #bcb0ee;
+  color:  #ffffff;
+  .d-icon {
+    color:  #ffffff;  
+  }
+}
